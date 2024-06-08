@@ -10,10 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
-from pathlib import Path,os
-from dotenv import  load_dotenv
+from pathlib import Path
 
-load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -22,8 +20,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = 'django-insecure-b36_ie&^+*bdv18h^iy31bep@bys%hh$e-8$#(b=emwd=4rh&s'
 
-SECRET_KEY = str(os.getenv('SECRET_KEY' ))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -107,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'America/sao_paula'
+TIME_ZONE = 'America/sao_paulo'
 
 USE_I18N = True
 
